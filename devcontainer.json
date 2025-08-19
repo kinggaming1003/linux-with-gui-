@@ -1,7 +1,7 @@
 {
     "image": "mcr.microsoft.co",
     "features": {
-        "ghcr.io/devcontainers/features/f",  <-- Added a comma
+        "ghcr.io/devcontainers/features/f",
         "forwardPorts": [
             5901
         ],
