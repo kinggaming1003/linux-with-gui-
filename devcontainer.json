@@ -1,12 +1,14 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
-  "forwardPorts": ,
-  "portsAttributes": {
-    "5901": {
-      "label": "VNC desktop"
+    "image": "mcr.microsoft.co",
+    "features": {
+        "ghcr.io/devcontainers/features/f",  <-- Added a comma
+        "forwardPorts": [
+            5901
+        ],
+        "portsAttributes": {
+            "5901": {
+                "label": "VNC desktop"
+            }
+        }
     }
-  }
 }
