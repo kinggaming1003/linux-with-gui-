@@ -1,12 +1,19 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
-  "forwardPorts": ,
-  "portsAttributes": {
-    "5901": {
-      "label": "VNC desktop"
+    "image": "[mcr.microsoft.com/devcontainers/universal:2](https://mcr.microsoft.com/devcontainers/universal:2)",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tigervnc-standalone-server novnc",
+    "forwardPorts": [
+        6080,
+        5901
+    ],
+    "portsAttributes": {
+        "6080": {
+            "label": "noVNC desktop"
+        },
+        "5901": {
+            "label": "VNC desktop"
+        }
     }
-  }
 }
