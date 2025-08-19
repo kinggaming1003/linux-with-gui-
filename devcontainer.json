@@ -1,10 +1,14 @@
-
-http://googleusercontent.com/immersive_entry_chip/0
-
-
-I've provided a single block of code that should resolve all the syntax errors shown in your recent screenshots. The common issues you've faced were:
-* **Missing colons**: The key `"ghcr.io/devcontainers/features/desktop-lite:1"` was not followed by a colon.
-* **Missing commas**: The closing braces of objects and arrays were missing commas to separate them from the next entry.
-* **Trailing comma**: The last item in a JSON object or array should not have a comma after it.
-
-This corrected file has all the necessary elements and correct syntax. Once you update your file with this code, remember to rebuild your Codespace to apply the changes.
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+    "forwardPorts": [
+        6080
+    ],
+    "portsAttributes": {
+        "6080": {
+            "label": "noVNC desktop"
+        }
+    }
+}
