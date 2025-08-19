@@ -3,7 +3,9 @@
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
-  "forwardPorts": .
+  "forwardPorts": [
+    5901
+  ],
   "portsAttributes": {
     "5901": {
       "label": "VNC desktop"
